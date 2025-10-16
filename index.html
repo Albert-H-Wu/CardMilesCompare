@@ -1,81 +1,306 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<title>2025 長榮航空哩程信用卡效益比較（11 張卡）</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>台灣信用卡換長榮航空哩程｜50萬國內 + 10萬外幣試算（含 2026 已公告調整）</title>
 <style>
-    body {font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;margin:20px;line-height:1.6;background:#fdfdfd;}
-    h1,h2,h3{color:#1a237e;margin-top:1.4em;}
-    .summary{background:#e8f5e9;border-left:6px solid #43a047;padding:12px 16px;margin-bottom:24px;font-size:1.1em;}
-    table{width:100%;border-collapse:collapse;margin-bottom:24px;}
-    th,td{border:1px solid #cccccc;padding:8px 10px;text-align:center;}
-    th{background:#f5f5f5;}
-    .net-positive{background:#fffde7;font-weight:bold;color:#d32f2f;}
-    .card-box{border:1px solid #bdbdbd;border-radius:8px;padding:16px 20px;margin-bottom:20px;background:#fafafa;}
-    .card-box h3{margin-top:0;margin-bottom:8px;color:#0d47a1;}
-    .note{font-size:0.9em;color:#616161;}
-    ol li,ul li{margin-bottom:6px;}
+  :root{
+    --bg:#fbfbfe;--ink:#121826;--muted:#5f6b7a;--brand:#1a73e8;--ok:#2e7d32;--warn:#ef6c00;--bad:#c62828;
+    --card:#ffffff;--line:#e8eaf1;--chip:#e3f2fd;--tableHead:#f7f9fc;--accent:#0d47a1;
+  }
+  html,body{background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0}
+  .wrap{max-width:1100px;margin:auto;padding:28px 20px 80px}
+  header{background:linear-gradient(120deg,#e3f2fd,#e8f5e9);border-bottom:1px solid var(--line);padding:28px 20px 18px;margin:-28px -20px 24px}
+  header h1{margin:0;color:#0b3d91;letter-spacing:.5px}
+  .chip{display:inline-block;background:var(--chip);color:#0b3d91;border:1px solid #cfe4ff;padding:2px 10px;border-radius:999px;font-size:12px;margin-right:6px}
+  .note{color:var(--muted);font-size:13px}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 16px;margin:16px 0}
+  h2{margin:18px 0 10px;color:var(--accent)}
+  h3{margin:12px 0 8px;color:#0b3d91}
+  .grid{display:grid;gap:14px}
+  @media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  thead th{background:var(--tableHead);font-weight:700}
+  th,td{border-bottom:1px solid var(--line);padding:10px 10px;text-align:center}
+  tbody tr:nth-child(odd){background:#fcfdff}
+  .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:12px;border:1px solid var(--line);background:#f1f8ff;color:#0b3d91}
+  .good{color:var(--ok);font-weight:700}
+  .warn{color:var(--warn);font-weight:700}
+  .bad{color:var(--bad);font-weight:700}
+  .kpi{display:flex;flex-wrap:wrap;gap:10px}
+  .kpi .item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+  .foot{font-size:12px;color:var(--muted);margin-top:8px}
+  ul{margin:6px 0 0 18px}
 </style>
 </head>
 <body>
-<h1>2025 長榮航空哩程信用卡效益比較（11 張卡）</h1>
-<div class="summary"><strong>一句話總結：</strong>以「國內 NT 80 萬 + 海外 NT 10 萬」的年度刷卡量來看，<span style="color:#d32f2f;font-weight:bold;">滙豐旅人御璽卡（24,556 元）</span> 與 <span style="color:#d32f2f;font-weight:bold;">凱基雙幣哩程卡（25,000 元）</span> 仍為淨效益冠軍；新增卡中 <span style="color:#d32f2f;font-weight:bold;">國泰長榮無限卡</span> 以 22,282 元緊追其後，而 <span style="color:#d32f2f;font-weight:bold;">AmEx 長榮簽帳白金卡</span> 因高年費呈負效益，適合極重視貴賓室與升等券者。</div>
-<h2>計算前提與資料來源</h2>
-<table>
-<tr><th>參數</th><th>說明</th></tr>
-<tr><td>年度消費額</td><td>國內 NT 800,000；海外 NT 100,000</td></tr>
-<tr><td>里程估值</td><td>1 哩 = NT 0.5</td></tr>
-<tr><td>續卡禮</td><td>須完成「繳全額年費 + 指定刷卡」即可獲得</td></tr>
-<tr><td>海外手續費</td><td>未列入計算；各家差異 &lt; 0.5%</td></tr>
-<tr><td>資料日期</td><td>以 2025 年 5 月後官方公告為準</td></tr>
-</table>
-<h2>各卡回饋基礎資料</h2>
-<table>
-<tr>
-<th>卡片</th><th>年費 (NT)</th><th>國內哩速</th><th>海外哩速</th><th>續卡禮 (哩)</th>
-</tr>
-<tr><td>星展飛行世界卡</td><td>3,600</td><td>NT 20 = 1 哩</td><td>NT 15 = 1 哩</td><td>3,000</td></tr>
-<tr><td>星展飛行世界之極卡</td><td>24,000</td><td>NT 18 = 1 哩</td><td>NT 15 = 1 哩</td><td>24,000</td></tr>
-<tr><td>滙豐旅人無限卡</td><td>8,000</td><td>NT 18 = 1 哩</td><td>NT 10 = 1 哩</td><td>8,000</td></tr>
-<tr><td>滙豐旅人御璽卡</td><td>2,500</td><td>NT 18 = 1 哩</td><td>NT 15 = 1 哩</td><td>3,000</td></tr>
-<tr><td>樂天樂翔無限卡</td><td>15,000</td><td>NT 18 = 1 哩</td><td>NT 6 = 1 哩</td><td>0</td></tr>
-<tr><td>凱基雙幣哩程卡</td><td>0</td><td>NT 18 = 1 哩</td><td>NT 18 = 1 哩</td><td>0</td></tr>
-<tr><td>滙豐 Live+ 現金回饋卡</td><td>0</td><td>0.88% 積點 → 1 點 = 2 哩</td><td>同左</td><td>0</td></tr>
-<tr><td>美國運通長榮航空簽帳白金卡</td><td>36,800</td><td>NT 25 = 1 哩</td><td>NT 25 = 1 哩 (海外 50% 加碼 → 16.7)</td><td>0</td></tr>
-<tr><td>國泰長榮航空聯名卡－極致無限卡</td><td>20,000</td><td>NT 20 = 1 哩</td><td>指定海外 10 = 1 哩<br>其他 20 = 1 哩</td><td>30,000</td></tr>
-<tr><td>國泰長榮航空聯名卡－無限卡</td><td>2,400</td><td>NT 22 = 1 哩</td><td>指定海外 10 = 1 哩</td><td>3,000</td></tr>
-<tr><td>國泰長榮航空聯名卡－極致御璽卡</td><td>800</td><td>NT 30 = 1 哩</td><td>指定海外 10 = 1 哩</td><td>1,500</td></tr>
-</table>
-<h2>2025 年度刷卡試算結果</h2>
-<table>
-<tr>
-<th>卡片</th><th>年度哩程 (含續卡禮)</th><th>哩程價值 (NT)</th><th>年費 (NT)</th><th class="net-positive">淨效益 (NT)</th>
-</tr>
-<tr><td>滙豐旅人御璽卡</td><td>54,111</td><td>27,556</td><td>2,500</td><td class="net-positive">24,556</td></tr>
-<tr><td>凱基雙幣哩程卡</td><td>50,000</td><td>25,000</td><td>0</td><td class="net-positive">25,000</td></tr>
-<tr><td>滙豐旅人無限卡</td><td>62,444</td><td>31,222</td><td>8,000</td><td class="net-positive">23,222</td></tr>
-<tr><td>國泰長榮航空聯名卡－無限卡</td><td>49,364</td><td>24,682</td><td>2,400</td><td class="net-positive">22,282</td></tr>
-<tr><td>星展飛行世界卡</td><td>49,667</td><td>24,833</td><td>3,600</td><td class="net-positive">21,233</td></tr>
-<tr><td>國泰長榮航空聯名卡－極致無限卡</td><td>80,000</td><td>40,000</td><td>20,000</td><td class="net-positive">20,000</td></tr>
-<tr><td>國泰長榮航空聯名卡－極致御璽卡</td><td>38,167</td><td>19,083</td><td>800</td><td class="net-positive">18,284</td></tr>
-<tr><td>星展飛行世界之極卡</td><td>75,111</td><td>37,556</td><td>24,000</td><td class="net-positive">13,556</td></tr>
-<tr><td>樂天樂翔無限卡</td><td>61,111</td><td>30,556</td><td>15,000</td><td class="net-positive">15,556</td></tr>
-<tr><td>滙豐 Live+ 現金回饋卡</td><td>15,840</td><td>7,920</td><td>0</td><td class="net-positive">7,920</td></tr>
-<tr><td>美國運通長榮航空簽帳白金卡</td><td>38,000</td><td>19,000</td><td>36,800</td><td class="net-positive">-17,800</td></tr>
-</table>
-<h2>深度解析與建議</h2>
-<div class="card-box"><h3>1. 主力卡：凱基雙幣哩程卡 &amp; 滙豐旅人御璽卡</h3><p>國內 18 元/哩；凱基免年費、滙豐御璽年費低且有 3,000 哩續卡禮，在中度刷卡量下表現最佳。</p></div>
-<div class="card-box"><h3>2. 海外實體加碼：國泰長榮無限卡／極致御璽卡</h3><p>指定海外 10 元=1 哩，年費 2,400 / 800 元，適合常跑海外旅遊／免稅店的用戶。</p></div>
-<div class="card-box"><h3>3. 高端禮遇：國泰極致無限卡 &amp; AmEx 白金卡</h3><p>附多次機接、升等券與龍騰 / Centurion Lounge，僅當您能用滿高階權益與高額海外實體刷卡時才具備正效益。</p></div>
-<div class="card-box"><h3>4. 網購 or 高額海外：樂天樂翔無限卡 &amp; 滙豐旅人無限卡</h3><p>樂天海外 6 元=1 哩、滙豐無限 10 元=1 哩（含機接 4 次），適合大量海外網購或跨境代購族。</p></div>
-<div class="card-box"><h3>5. 彈性備卡：滙豐 Live+ 卡</h3><p>僅在指定通路達成 5.88 % 回饋時換哩成本低；其餘情境建議專注哩程卡。</p></div>
-<h2>使用建議流程</h2>
-<ol>
-<li><strong>主要卡：</strong>凱基雙幣 / 滙豐御璽覆蓋日常國內 80 萬。</li>
-<li><strong>海外實體：</strong>國泰無限或極致御璽；大量海外網購則用樂天無限或滙豐無限。</li>
-<li><strong>高端需求：</strong>如需機接 / Lounge，考慮國泰極致無限；需全球 Centurion Lounge 再升級 AmEx 白金。</li>
-<li>年末檢視哩程兌換與年費效益，決定續卡或降等。</li>
-</ol>
-<p class="note">© 2025 Albert</p>
+<div class="wrap">
+  <header>
+    <h1>台灣信用卡換長榮航空哩程比較</h1>
+    <div style="margin-top:8px">
+      <span class="chip">試算情境：國內 NT$500,000 + 海外 NT$100,000</span>
+      <span class="chip">哩程估值：1 哩 = NT$0.5</span>
+      <span class="chip">基準日：2025-10-15（台北時間）</span>
+      <span class="chip">含 2026 已公告調整</span>
+    </div>
+    <p class="note" style="margin-top:8px">備註：若銀行已公告 2026 規則（如星展飛行世界卡），以下以新規則計算；其餘以 2025/下半年的最新公告為準。續卡禮需符合官方任務與資格。</p>
+  </header>
+
+  <section class="panel">
+    <h2>重點結論</h2>
+    <div class="kpi">
+      <div class="item"><strong>年度淨效益 Top 3</strong><br>① 凱基雙幣哩程卡（<span class="good">≈ NT$16,667</span>） ② 滙豐旅人御璽卡（<span class="good">≈ NT$16,222</span>） ③ HSBC Traveller Light（<span class="good">≈ NT$15,000</span>）</div>
+      <div class="item"><strong>海外高哩速</strong><br>樂天樂翔無限（6 元/哩）與滙豐旅人無限（10 元/哩），但年費較高，須評估是否回本。</div>
+      <div class="item"><strong>政策提醒</strong><br>國泰長榮卡「10 元=1 哩」<u>已限縮為海外實體與指定線上旅遊類別</u>；一般海外網購多為 15 元=1 哩。</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>計算假設</h2>
+    <div class="grid grid-3">
+      <div>
+        <h3>消費結構</h3>
+        <ul>
+          <li>國內 NT$500,000；海外 NT$100,000（等值新台幣）</li>
+          <li>海外手續費與匯差未納入（各家約 1.5% 左右）</li>
+        </ul>
+      </div>
+      <div>
+        <h3>換算規則</h3>
+        <ul>
+          <li>各卡「元/哩」依 2025/5 以後公告；星展 2026 新制已套用</li>
+          <li>續卡禮：僅計入「繳年費＋完成指定門檻即可獲得」的固定哩程</li>
+        </ul>
+      </div>
+      <div>
+        <h3>效益計算</h3>
+        <ul>
+          <li>年度哩程＝（國內刷卡÷國內哩速）＋（海外刷卡÷海外哩速）＋續卡禮</li>
+          <li>淨效益＝哩程×NT$0.5 − 年費（四捨五入顯示）</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>年度試算結果（50 萬國內 + 10 萬外幣）</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>卡片</th>
+          <th>國內/海外哩速</th>
+          <th>年費/續卡禮</th>
+          <th>年度取得哩程</th>
+          <th>淨效益（NT$）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>凱基雙幣哩程卡</td>
+          <td>18 / 18 元=1 哩</td>
+          <td>年費 0／無</td>
+          <td>≈ 33,333 哩</td>
+          <td class="good">≈ 16,667</td>
+        </tr>
+        <tr>
+          <td>滙豐 Traveller 御璽</td>
+          <td>18 / 15 元=1 哩</td>
+          <td>年費 2,500／續卡 3,000 哩</td>
+          <td>≈ 37,444 哩</td>
+          <td class="good">≈ 16,222</td>
+        </tr>
+        <tr>
+          <td>HSBC Traveller Light</td>
+          <td>20 / 20 元=1 哩</td>
+          <td>年費 0／無</td>
+          <td>≈ 30,000 哩</td>
+          <td class="good">≈ 15,000</td>
+        </tr>
+        <tr>
+          <td>滙豐 Traveller 無限</td>
+          <td>18 / 10 元=1 哩</td>
+          <td>年費 8,000／續卡 8,000 哩</td>
+          <td>≈ 45,778 哩</td>
+          <td>≈ 14,889</td>
+        </tr>
+        <tr>
+          <td>樂天樂翔（御璽）</td>
+          <td>18 / 13 元=1 哩</td>
+          <td>年費 3,000／無</td>
+          <td>≈ 35,470 哩</td>
+          <td>≈ 14,735</td>
+        </tr>
+        <tr>
+          <td>國泰長榮 無限</td>
+          <td>22 / 15 元=1 哩</td>
+          <td>年費 2,400／續卡 3,000 哩</td>
+          <td>≈ 32,394 哩</td>
+          <td>≈ 13,797</td>
+        </tr>
+        <tr>
+          <td>美國運通 長榮簽帳金卡</td>
+          <td>（約）20 / 15 元=1 哩</td>
+          <td>年費 約 2,500／無</td>
+          <td>≈ 31,667 哩</td>
+          <td>≈ 13,333</td>
+        </tr>
+        <tr>
+          <td>星展 飛行世界卡（2026）</td>
+          <td>22 / 18 元=1 哩</td>
+          <td>年費 3,600／續卡 3,000 哩</td>
+          <td>≈ 31,283 哩</td>
+          <td>≈ 12,041</td>
+        </tr>
+        <tr>
+          <td>國泰長榮 極致御璽</td>
+          <td>30 / 15 元=1 哩</td>
+          <td>年費 800／續卡 1,500 哩</td>
+          <td>≈ 24,833 哩</td>
+          <td>≈ 11,617</td>
+        </tr>
+        <tr>
+          <td>國泰長榮 極致無限</td>
+          <td>20 / 15 元=1 哩</td>
+          <td>年費 20,000／續卡 30,000 哩</td>
+          <td>≈ 61,667 哩</td>
+          <td>≈ 10,833</td>
+        </tr>
+        <tr>
+          <td>樂天樂翔（無限）</td>
+          <td>18 / 6 元=1 哩</td>
+          <td>年費 15,000／無</td>
+          <td>≈ 44,444 哩</td>
+          <td>≈ 7,222</td>
+        </tr>
+        <tr>
+          <td>HSBC Live+（0.88% 基本）</td>
+          <td>約 227 元=1 哩（現金積點換哩）</td>
+          <td>年費 0／無</td>
+          <td>≈ 2,640 哩</td>
+          <td>≈ 1,320</td>
+        </tr>
+        <tr>
+          <td>星展 飛行世界之極（2026）</td>
+          <td>20 / 15 元=1 哩</td>
+          <td>年費 24,000／續卡 10,000 哩</td>
+          <td>≈ 41,667 哩</td>
+          <td class="bad">≈ −3,167</td>
+        </tr>
+        <tr>
+          <td>美國運通 長榮簽帳白金</td>
+          <td>25 / 16.7 元=1 哩</td>
+          <td>年費 約 36,800／無</td>
+          <td>≈ 25,988 哩</td>
+          <td class="bad">≈ −23,806</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="foot">＊為便於比較，四捨五入至整數或小數第 0 位；實際入帳依各家銀行規則（進位/捨去/門檻/回饋上限）而異。</div>
+  </section>
+
+  <section class="panel">
+    <h2>各卡優惠與門檻／限制</h2>
+
+    <div class="grid grid-2">
+      <div class="panel">
+        <h3>凱基雙幣哩程卡</h3>
+        <ul>
+          <li>一般消費 18 元=1 哩；指定理財會員海外可至 12 元=1 哩（需符合銀行資格）。</li>
+          <li>免年費（電子帳單/條件依官網）。</li>
+          <li>哩程以銀行點數即時折算，注意點數效期與每次兌換門檻。</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>滙豐 Traveller 御璽</h3>
+        <ul>
+          <li>國內 18、海外 15 元=1 哩；點數 1:1 轉長榮。</li>
+          <li>續卡禮 3,000 哩（需年費入帳＋指定消費）。</li>
+          <li>常見權益：機場接送、部分貴賓室／保險（<span class="warn">次數與門檻依官網，可能需事先登錄</span>）。</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>滙豐 Traveller 無限</h3>
+        <ul>
+          <li>國內 18、海外 10 元=1 哩；點數 1:1 轉長榮。</li>
+          <li>續卡禮 8,000 哩（需年費入帳＋指定消費）。</li>
+          <li>機場接送與貴賓室次數優於御璽（<span class="warn">須符合指定消費門檻／登錄與上限</span>）。</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>HSBC Traveller Light</h3>
+        <ul>
+          <li>國內/海外 20 元=1 哩；免年費。</li>
+          <li>無豪華權益，勝在簡單累哩與無年費負擔。</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>樂天樂翔（無限／御璽）</h3>
+        <ul>
+          <li>無限：海外 6 元=1 哩；御璽：海外 13 元=1 哩；國內皆為 18 元=1 哩。</li>
+          <li>點數 1:1 換長榮；<span class="warn">部分活動需登錄、有限期與兌換單位</span>。</li>
+          <li>年費門檻：無限 15,000、御璽 3,000（<span class="warn">以官網為準</span>）。</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>國泰長榮聯名（極致無限／無限／極致御璽）</h3>
+        <ul>
+          <li>一般海外 15 元=1 哩；<u>10 元=1 哩</u>限「海外實體」與「指定線上旅遊類別」（如訂房平台、航空官網等），<span class="warn">須符合平台清單與分類碼</span>。</li>
+          <li>國內哩速：極致無限 20、無限 22、極致御璽 30 元=1 哩。</li>
+          <li>續卡禮：極致無限 30,000 哩、無限 3,000 哩、極致御璽 1,500 哩（<span class="warn">需完成年費入帳與指定刷卡</span>）。</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>星展 飛行世界卡／世界之極（2026 新制）</h3>
+        <ul>
+          <li>世界卡：國內 22、海外 18 元=1 哩；世界之極：國內 20、海外 15 元=1 哩（<span class="warn">2026 起續卡禮縮減</span>）。</li>
+          <li>可 1:1 轉長榮哩程；<span class="warn">部分貴賓室/餐飲權益已下修或需年費正刷</span>。</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>美國運通 長榮簽帳（金／白金）</h3>
+        <ul>
+          <li>金卡：國內基本 25 元=1 哩，<span class="warn">每月首 2,000 哩</span>國內加碼 25%（≈20 元/哩）；海外/EVA 消費加碼 67%（≈15 元/哩）。</li>
+          <li>白金：國內 25 元/哩；海外/EVA 消費加碼 50%（≈16.7 元/哩）；<span class="warn">年費高，重視升等券/貴賓室者適用</span>。</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3>HSBC Live+（現金積點換哩）</h3>
+        <ul>
+          <li>基本 0.88% 積點：多數情境換哩約 227 元=1 哩，僅在指定通路 5.88% 加碼時具競爭力（<span class="warn">需登錄且有上限</span>）。</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="foot">權益示意為重點摘要，詳盡條款（登錄、上限、回饋排除、票務與保險細節）以各發卡機構最新公告為準。</p>
+  </section>
+
+  <section class="panel">
+    <h2>怎麼選？快速建議</h2>
+    <ul>
+      <li><strong>不想付年費、單純累哩：</strong>凱基雙幣（若海外多且具理財資格可達 12 元/哩），或 HSBC Traveller Light。</li>
+      <li><strong>海外網購/旅遊較多：</strong>樂天樂翔無限（6 元/哩）或滙豐無限（10 元/哩，含機接/Lounge）。</li>
+      <li><strong>主要搭長榮並需高階禮遇：</strong>國泰極致無限（高續卡禮）、星展之極／美運白金（評估年費與使用頻率）。</li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>更新註記</h2>
+    <ul>
+      <li>已反映：國泰長榮卡自 2025/5/1 起海外 10 元=1 哩之限制（僅海外實體/指定線上旅遊類別）。</li>
+      <li>已反映：星展飛行世界系列 2026 年新制（世界卡 22/18、世界之極續卡禮縮減）。</li>
+      <li>若您提供特定卡最新權益連結，我可即時把表格與權益區更新進來。</li>
+    </ul>
+  </section>
+
+</div>
 </body>
 </html>
